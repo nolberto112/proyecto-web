@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Barbería Nolbertt</title>
+
   <style>
     body {
       margin: 0;
@@ -44,6 +45,24 @@
       border-radius: 5px;
     }
 
+    .galeria {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .galeria img {
+      width: 250px;
+      border-radius: 10px;
+      border: 2px solid gold;
+    }
+
+    iframe {
+      margin-top: 20px;
+    }
+
     footer {
       background: black;
       padding: 20px;
@@ -72,15 +91,26 @@
 </section>
 
 <section>
-  <h2>Ubicación</h2>
-  <p>Tu dirección aquí</p>
+  <h2>Galería de Cortes</h2>
+  <div class="galeria">
+    <img src="imagenes/corte1.jpg">
+    <img src="imagenes/corte3.jpg">
+  </div>
 </section>
 
 <section>
-  <h2>Galería de Cortes</h2>
+  <h2>Ubicación</h2>
+  <p>lima km 50 carretera central </p>
 
-  <img src="imagenes/corte1.jpg" width="250">
-  <img src="imagenes/corte3.jpg" width="250">
+  <!-- REEMPLAZA EL src CON EL QUE TE DA GOOGLE MAPS -->
+  <iframe
+    src="https://maps.app.goo.gl/x81PG3BSh4WNnHJLA"
+    width="90%"
+    height="300"
+    style="border:0; border-radius:10px;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
 </section>
 
 <footer>
@@ -89,5 +119,3 @@
 
 </body>
 </html>
-
-
